@@ -9,15 +9,18 @@ function InputArea(props){
         setInput(newValue);
     }
 
-    <div className="form">
+    return(
+        <div className="form">
         <input type="text" onChange={handleChange} value={inputText}/>
-                <button onClick={() => {
-                    props.add(inputText)
-                    setInput("");
-                }}>
-                    <span>Add</span>
-                </button>
+            <button onClick={() => {
+                props.OnAdd(inputText)
+                setInput("");
+            }}> 
+                <span>Add</span>
+            </button>
     </div>
+    )
+
    
 };
 
