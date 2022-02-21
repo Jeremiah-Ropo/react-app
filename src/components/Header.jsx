@@ -2,7 +2,10 @@ import React from 'react'
 
 function Header(){
     return(
-    <h1>To-Do List</h1>
+        <header>
+            <h1>Keeper</h1>
+        </header>
+
     )
 };
 
